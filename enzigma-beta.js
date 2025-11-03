@@ -14,7 +14,7 @@ if (currentURL.includes('beta.enzigma.com')) {
   document.getElementById('oid').value = '00DF8000000AHoP';
   document.getElementById('00NF800000AaSlq').setAttribute("name", "00NF800000AaSlq");
   document.getElementById('00N2v00000ZfKB5').setAttribute("name","00N2v00000ZfKB5");
-  document.getElementById('retURL').value = 'https://www.enzigma.com/thankyou';
+  document.getElementById('retURL').value = 'https://beta.enzigma.com//thankyou';
   document.getElementsByClassName("con-form-main")[0].setAttribute("action", "https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DF8000000AHoP");
 
 } else if (currentURL.includes('enzigma.com')) {
@@ -22,12 +22,12 @@ if (currentURL.includes('beta.enzigma.com')) {
   document.getElementById('oid').value = '00D2v000002H0GU';
   document.getElementById('00NF800000AaSlq').setAttribute("name", "00NGC00000cubG7"); 
   document.getElementById('00N2v00000ZfKB5').setAttribute("name","00N2v00000ZfKB5");
-  document.getElementById('retURL').value = 'https://enzigma.com/thankyou/';
+  document.getElementById('retURL').value = 'https://beta.enzigma.com//thankyou/';
   document.getElementsByClassName("con-form-main")[0].setAttribute("action","https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8");
 } else {
   console.log("Localhost URL");
   document.getElementById('oid').value = '00DF8000000AHoP';
-  document.getElementById('retURL').value = 'https://www.enzigma.com/thankyou/';
+  document.getElementById('retURL').value = 'https://beta.enzigma.com//thankyou/';
   document.getElementsByClassName("con-form-main")[0].setAttribute("action", "https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DF8000000AHoP");
 }
 
@@ -302,6 +302,10 @@ if (currentURL.includes('beta.enzigma.com')) {
     
       if (hasErrors) {
         e.preventDefault();
+        return false;
+      } else {
+        // Allow normal form submission to proceed
+        return true;
       }
     });
     
@@ -326,6 +330,28 @@ if (currentURL.includes('beta.enzigma.com')) {
       }
     });
 
+    
+    // Form submit event for blog contact form
+    $(document).on('submit', '.custom-blog-contact-form', function (e) {
+      var firstName = $(this).find('#first_name').val().trim();
+      var lastName = $(this).find('#last_name').val().trim();
+      var email = $(this).find('#email').val().trim();
+      
+      if (firstName === '' || lastName === '' || email === '') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        return false;
+      }
+      
+      // Track event and allow form to submit
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'form_submit', {
+          event_category: 'form',
+          event_label: 'blog_contact_form'
+        });
+      }
+      // Form will submit normally and redirect
+    });
     
     
     
@@ -493,6 +519,56 @@ $('.prd-select-service').dropdown({
   
   
 }.call(window, window.jQuery);
+
+// Event Tracking
+document.addEventListener('DOMContentLoaded', function() {
+  // Fire form submit event on thank you page
+  if (window.location.href.includes('/thankyou')) {
+    console.log('Thank you page detected');
+    setTimeout(function() {
+      if (typeof gtag !== 'undefined') {
+        console.log('Sending form_submit event');
+        gtag('event', 'form_submit', {
+          form_name: 'contact_form'
+        });
+      } else if (typeof ga !== 'undefined') {
+        console.log('Using ga instead of gtag');
+        ga('send', 'event', 'form', 'submit', 'contact_form');
+      } else {
+        console.log('No analytics found');
+      }
+    }, 1000);
+  }
+
+  // Scroll tracking
+  let scrollTracked = false;
+  window.addEventListener('scroll', function() {
+    if (!scrollTracked && window.pageYOffset > 300) {
+      gtag('event', 'scroll', { event_category: 'engagement' });
+      scrollTracked = true;
+    }
+  });
+
+  // Menu button clicks
+  document.querySelectorAll('nav a, .enzigma-mob-menu a, .navbar a').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'menu_click', { 
+        event_category: 'navigation',
+        event_label: this.textContent.trim()
+      });
+    });
+  });
+
+  // CTA clicks
+  document.querySelectorAll('.cta, .btn-cta, .call-to-action, .contact-btn').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'cta_click', {
+        event_category: 'engagement',
+        event_label: this.textContent.trim()
+      });
+    });
+  });
+});
 
 // this is slider for home page product 
 
@@ -680,6 +756,14 @@ document.querySelectorAll('.newsletter').forEach(function(form) {
         var companyInput = form.querySelector('#company');
         if (companyInput) {
             companyInput.value = company;
+        }
+
+        // Track newsletter form submission
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'form_submit', {
+            event_category: 'form',
+            event_label: 'newsletter_form'
+          });
         }
 
         // Form is submitted if no errors
