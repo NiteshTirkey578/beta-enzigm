@@ -232,13 +232,15 @@
     .form-title-blog-h {
     padding-top: 10px;
 }
- .home-cta-btn, .popup-btn-contact-us, .read-more-success-cta{
+
+.home-cta-btn, .popup-btn-contact-us, .read-more-success-cta{
     font-size: 16px !important;
  }
- .tab-indicator-hy-cta{
+ 
+  .tab-indicator-hy-cta{
     padding-bottom: 60px;
-    
  }
+
 }
 @media(min-width:1300px){
      .tab-indicator-hy-cta{
@@ -246,6 +248,7 @@
     
  }
 }
+
 .form-title-blog-p{
     padding-bottom:5px;
 }
@@ -2236,6 +2239,20 @@ padding: 10px 25px;
   will-change: auto !important;
   pointer-events: none; /* avoids intercepting click */
 }
+
+
+ .read-more-success-cta{
+    font-size: 16px !important;
+ }
+ 
+ .tab-indicator-hy-cta{
+    margin-top: 10px;
+ }
+
+ .popup-btn-contact-us{
+    font-size: 16px !important;
+ }
+ 
 }
 
 
@@ -2250,24 +2267,251 @@ padding: 10px 25px;
 	border: none;
 	border-radius: 2px;
 	cursor: pointer;
+} 
+
+.popup-btn-contact-us:hover{
+    background-color: #196fa4;
+ } 
+ 
+ /* Faq accordion css */
+  .faq-accordion ol, .faq-accordion ul{
+   padding-left: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+ } 
+ 
+ /*popup builder css */
+ 
+ 
+ .sgpb-content-10309 {
+    max-width: 616px !important;
+     border-radius: 0 !important;
 }
 
- .popup-btn-contact-us:hover{
-    background-color: #196fa4;
- }
+.sgpb-content-10309  .get-touch-form .contact-form-h2{
+    color: #000 !important;
+    font-family: 'Gilroy-Medium' !important;
+}
+.sgpb-content-10309 .get-touch-form label{
+    font-family: 'Gilroy-SemiBold';
+}
+.sgpb-content-10309  .contact-form-p, .sgpb-content-10309  .get-touch-form label{
+    color: #000;
+}
 
- .read-more-success-cta{
-    font-size: 16px !important;
- }
+ .sgpb-content-10309 .wpcf7-form input, 
+ .sgpb-content-10309 .wpcf7-form textarea,
+  .sgpb-content-10309 .wpcf7-form .wpcf7-select,
+.sgpb-content-10309 .wpcf7-select-parent .select-arrow 
+  {
+    background: #F1F1F1;
+}
 
- .tab-indicator-hy-cta{
-    margin-top: 10px;
- }
 
- .popup-btn-contact-us{
-    font-size: 16px !important;
- }
+ .sgpb-content-10309 .contact-submit{
+    text-align: left;
+}
+.sgpb-content-10309 .get-touch-form{
+    padding: 20px 40px 10px 40px;
+}
 
- .home-cta-btn, .popup-btn-contact-us, .read-more-success-cta{
-    font: size 16px;
- }
+.sgpb-content-10309 .contact-submit input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    background: #198FD9;
+       width: auto;
+    text-transform: capitalize;
+     font-size: 16px;
+    border-radius: 5px !important;
+}
+
+ .sgpb-popup-close-button-6{
+pointer-events: auto !important;
+}
+
+
+.sgpb-content-10309 .intl-tel-input ul.country-list {
+    width: 200px !important;
+}
+
+.contact-fileds:nth-of-type(3) p br:last-of-type {
+    display: none !important;
+}
+
+.contact-fileds:nth-of-type(3) .wpcf7-form-control-wrap .wpcf7-select{
+    border-radius: 0 !important;
+}
+
+.sgpb-content-10309 .wpcf7 .wpcf7-form.invalid .wpcf7-response-output{
+    display: none;
+}
+
+.sgpb-content-10309  .contact-form-p{
+    margin-bottom: 30px !important;
+    margin-top: 5px;
+}
+
+.sgpb-content-10309 .wpcf7-form textarea {
+    height: 120px !important;
+}
+
+.sgpb-content-10309 .contact-fileds .wpcf7-not-valid-tip {
+    position: absolute !important;
+    left: 0 !important;
+    bottom: -42px;
+    font-size: 12px !important;
+}
+
+.sgpb-content-10309 .contact-fileds:nth-of-type(2) p label:last-of-type .wpcf7-not-valid-tip {
+    bottom: -38px !important;
+}
+
+ .sgpb-content-10309 .contact-fileds:nth-of-type(3) .wpcf7-not-valid-tip{
+    position: absolute !important;
+    left: -70px !important;
+    bottom: -22px;
+}
+
+
+.sgpb-content-10309 .contact-fileds:nth-of-type(3) p label:last-of-type .wpcf7-not-valid-tip {
+        left: -125px !important;
+    }
+    
+  .sgpb-content-10309 .get-touch-form textarea + .wpcf7-not-valid-tip {
+  position: absolute !important;
+  bottom: -80px; /* adjust as needed */
+  left: 0;
+   font-size: 12px !important;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    
+    .sgpb-content-10309 .get-touch-form {
+        padding: 10px 20px 5px 20px;
+    }
+    
+    .sgpb-content-10309 .get-touch-form .contact-form-h2{
+        margin-bottom: 0 !important;
+    }
+    .sgpb-content-10309 .contact-form-p {
+        margin-bottom: 20px !important;
+        margin-top: 0;
+    }
+    
+    .sgpb-content-10309 .get-touch-form label {
+    margin-bottom: 0px !important;
+}
+
+.sgpb-content-10309  .get-touch-form .contact-form-h2{
+    font-size: 32px !important;
+}
+.sgpb-content-10309  .contact-form-p{
+    font-size: 13px !important;
+}
+.sgpb-content-10309 .get-touch-form label{
+    font-size: 11px !important;
+}
+
+.sgpb-content-10309 .wpcf7-not-valid-tip {
+    font-size: 10px !important;
+}
+
+.contact-fileds:nth-of-type(3) .wpcf7-form-control-wrap .wpcf7-select{
+    font-size: 10px !important;
+}
+
+
+.sgpb-content-10309 .wpcf7-not-valid-tip {
+position: absolute !important;
+left: 0 !important;
+bottom: -38px;
+}
+
+.sgpb-content-10309 .contact-fileds .wpcf7-not-valid-tip{
+    font-size: 9px !important;
+}
+
+.sgpb-content-10309 .contact-fileds:nth-of-type(3) .wpcf7-not-valid-tip{
+position: absolute !important;
+left: -49px !important;
+bottom: -12px;
+}
+
+    .sgpb-content-10309 .contact-fileds:nth-of-type(3) p label:last-of-type .wpcf7-not-valid-tip {
+        left: -88px !important;
+    }
+       .sgpb-content-10309 .contact-fileds p label:last-of-type .wpcf7-not-valid-tip {
+        left: -88px !important;
+    }
+    .sgpb-content-10309 .contact-fileds p label:last-of-type .wpcf7-not-valid-tip {
+        left: 0px !important;
+    }
+
+.sgpb-content-10309 .wpcf7-form textarea {
+    height: 50px !important;
+}
+
+.sgpb-content-10309 .get-touch-form textarea + .wpcf7-not-valid-tip {
+    bottom: -38px;
+    font-size: 9px !important;
+}
+
+ .sgpb-content-10309  .contact-submit input.wpcf7-form-control.wpcf7-submit.has-spinner {
+        font-size: 13px !important;
+    }
+    
+    .sgpb-content-10309   .contact-fileds:nth-of-type(3) .wpcf7-select-parent{
+            margin-top: 5px !important;
+        }
+
+
+
+}
+
+
+@media (max-width: 600px){
+    .sgpb-content-10309 .contact-submit input.wpcf7-form-control.wpcf7-submit.has-spinner {
+        padding: 18px !important;
+    }
+     .sgpb-content-10309 .get-touch-form {
+        padding: 10px 20px 10px 20px;
+    }
+    
+   .sgpb-content-10309{
+      max-width: 320px !important;
+    }
+    
+    .sgpb-content-10309 .get-touch-form .contact-form-h2 {
+    font-size: 24px !important;
+    }
+    .sgpb-content-10309 .contact-form-p {
+        font-size: 14px !important;
+    }
+    .sgpb-content-10309 .contact-fileds:nth-of-type(3) .wpcf7-not-valid-tip {
+    left: -62px !important;
+    }
+    .sgpb-content-10309 .contact-fileds:nth-of-type(3) p label:last-of-type .wpcf7-not-valid-tip {
+        left: -111px !important;
+    }
+    
+    .sgpb-content-10309 .wpcf7-form textarea {
+    height: 80px !important;
+    }
+    .sgpb-content-10309 .get-touch-form textarea + .wpcf7-not-valid-tip {
+        bottom: -58px;
+    }
+    
+    .sgpb-content-10309  .wpcf7-select-parent {
+        margin-top: 10px !important;
+    }
+
+    
+}
+
+@media (min-width: 430px) and (max-width: 450px) {
+      .sgpb-content-10309{
+      max-width: 384px !important;
+    }
+}
+
+ 
+ /*popup builder css end */
