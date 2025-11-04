@@ -1,0 +1,793 @@
+.value-blue-box, .value-white-box{
+    box-shadow: 0px 23px 109px 0px rgba(0, 0, 0, 0.23), 0px 9.609px 45.538px 0px rgba(0, 0, 0, 0.17), 0px 5.137px 24.347px 0px rgba(0, 0, 0, 0.14), 0px 2.88px 13.648px 0px rgba(0, 0, 0, 0.12), 0px 1.53px 7.249px 0px rgba(0, 0, 0, 0.09), 0px 0.636px 3.016px 0px rgba(0, 0, 0, 0.06);
+}
+.img-100, .img-100 img{
+    width:100%;
+}
+.white-text{
+    color:#fff !important;
+}
+.testimonial-heading{
+    margin-bottom:-10px;
+    font-size: 32px !important;
+    font-family: 'Gilroy-Regular' !important;
+}
+.testimonial-images {
+    max-width: 100%;
+    width: auto;
+}
+.gilroy-font{
+    font-family: "Gilroy-Regular" !important;
+}
+.gilroy-font-light{
+    font-family: "Gilroy-Light" !important;
+}
+.success_story_1, .success_story_2{
+    cursor:pointer;
+}
+.img-box{
+    cursor:pointer;
+}
+.img-box img{
+ border-radius:15px;   
+}
+.img-box .img-after{
+	display:none;
+}
+.img-box .fusion-column-wrapper:hover .img-before{
+	display:none;
+}
+.img-box .fusion-column-wrapper:hover .img-after{
+	display:block;
+}
+.case-study-wrapper {
+    background: #FFF;
+    box-shadow: 0px 28px 154px 0px rgba(0, 0, 0, 0.14), 0px 11.698px 64.338px 0px rgba(0, 0, 0, 0.10), 0px 6.254px 34.398px 0px rgba(0, 0, 0, 0.08), 0px 3.506px 19.283px 0px rgba(0, 0, 0, 0.07), 0px 1.862px 10.241px 0px rgba(0, 0, 0, 0.06), 0px 0.775px 4.262px 0px rgba(0, 0, 0, 0.04);
+}
+.case-study-page ul.fusion-filters {
+    display: flex;
+    justify-content: center;
+    margin-left:0;
+    margin-bottom:160px;
+}
+.eps-heading h1{
+    background: linear-gradient(90deg, #292B6A 0%, #5054D0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.application-tabs li{
+    margin-right:15px !important;
+}
+.application-tabs ul{
+    gap:0 !important;
+}
+.application-tabs li.active a h4 {
+    font-family: 'Gilroy-SemiBold' !important;
+}
+
+.application-tabs p {
+    font-size: 16px;
+    font-family:'Gilroy-Medium';
+}
+.versatile-box-wrapper img {
+    max-height: 70px;
+    width: auto;
+}
+.in-recycole .fusion-column-wrapper.fusion-column-has-shadow.fusion-flex-justify-content-flex-start.fusion-content-layout-column {
+   padding: 20px !important;
+}
+.grad-linear-head h1 {
+    margin-bottom: 30px !important;
+}
+
+.krafted-rel{
+    position: relative;
+}
+
+.krafted-absoult {
+    position: absolute;
+    right: -11%;
+    top: -20%;
+}
+
+@media screen and (max-width:1440px){
+    .eps-heading h1 {
+        font-size: 130px !important;
+    }
+}
+@media screen and (max-width:1280px){
+    .eps-heading h1 {
+        font-size: 100px !important;
+    }
+     .case-study-heading {
+        font-size: 48px !important;
+    }
+}
+@media screen and (max-width:1024px){
+    .eps-heading h1 {
+        font-size: 70px !important;
+    }
+}
+@media screen and (max-width:767px){
+    .eps-heading h1 {
+        font-size: 36px !important;
+    }
+    .case-study-heading {
+        font-size: 36px !important;
+    }
+    .testimonial-heading {
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    @supports (-webkit-touch-callout: none) {
+        #main .business-card-container.business-card-container-epp {
+            margin-left: -50px !important; /* Adjust as needed for iOS */
+            transform: translateX(calc(374px - 98%)) !important;
+        }
+    }
+
+}
+
+     /*Thermocole lagacy page css */
+     
+.page-id-4143 .post-content p {
+   min-height: 40px;
+}   
+     
+     .page-id-10012 .fusion-builder-row-3 {
+           height: 80vh !important;
+        }
+     
+ .gradient-overlay-videos .fusion-row {
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 74.13%, #000000 100%);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.my-slick-slider {
+    margin: 0 -10px;
+}
+
+.my-slick-slider > div {
+    padding: 0 10px;
+}
+
+.my-slick-slider img {
+    width: 100%;
+    display: block;
+}
+
+/* Custom Arrows */
+.slider-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+.slider-arrow img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hide default slick arrows */
+.my-slick-slider .slick-arrow {
+    display: none !important;
+}
+
+/* Slick Dots */
+.my-slick-slider .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.my-slick-slider .slick-dots li {
+    margin: 0 5px;
+}
+
+.my-slick-slider .slick-dots li button:before {
+    font-size: 10px;
+    color: #999;
+}
+
+.my-slick-slider .slick-dots li.slick-active button:before {
+    color: #272C69;
+}
+
+.slider-container .slick-list .slick-slide{
+margin: 0 10px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .slider-arrow {
+        display: none;
+    }
+
+    .my-slick-slider {
+        margin: 0 -5px;
+    }
+
+    .my-slick-slider > div {
+        padding: 0 5px;
+    }
+
+    .my-slick-slider .slick-dots li button:before {
+        font-size: 8px;
+    }
+     .my-slick-slider .slick-dots li{
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1550px) {
+      .page-id-11 .fusion-builder-column-31 .fusion-column-wrapper {
+    padding-bottom:0px;
+}
+.page-id-11 .fusion-builder-row-8 .fusion-builder-column-12 {
+    margin: 0;
+  }
+
+.page-id-10012  .fusion-builder-row-8 .awb-background-slider img {
+    height: auto !important;
+}
+   .page-id-10012  .fusion-builder-row-8{
+        padding-top: 30px !important;
+    }
+     .page-id-10012  .fusion-builder-row-8 .fusion-builder-row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .page-id-10012  .fusion-builder-row-8 .fusion-builder-row .fusion-layout-column .fusion-column-wrapper{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .page-id-10012  .fusion-builder-row-10{
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+      }
+      #menu-main-menu li a .menu-text {
+    font-size: 12px !important;
+}
+}
+
+
+@media (min-width: 1300px) and (max-width: 1550px) {
+.page-id-10012 .fusion-builder-row-7 {
+    padding-top: 35px !important;
+}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1290px) {
+    #mute-toggle {
+      width: 60px !important;
+    height: 60px !important;
+    padding:10px;
+}
+     #mute-toggles img {
+      width: 40px !important;
+    height: 50px !important;
+}
+     #mute-toggles {
+        bottom:20px !important;
+    }
+    .page-id-10012 .fusion-builder-row-3 {
+           height: 68vh !important;
+        }
+.page-id-10012 .fusion-builder-row-7{
+    padding-top: 20px !important;
+}
+.page-id-10012  .fusion-builder-row-8 .awb-background-slider img {
+    height: auto !important;
+}
+.krafted-absoult {
+    position: absolute;
+    right: -21%;
+    top: -20%;
+}
+.krafted-absoult img{
+    width: 70%;
+}
+.slider-arrow {
+    top: 25%;
+}
+.page-id-10012 .fusion-builder-row-7 .fusion-layout-column{
+    width: 48%;
+}
+}
+
+@media (min-width: 1300px) and (max-width: 1390px) {
+    
+    #mute-toggle {
+    bottom:160px !important;
+      width: 60px !important;
+    height: 60px !important;
+    padding:10px;
+}
+    #mute-toggles img {
+      width: 40px !important;
+    height: 50px !important;
+}
+    
+    /*#mute-toggles img {*/
+    /*  width: 20px !important;;*/
+    /*  height: 20px !important;;*/
+    /*}*/
+    
+      .page-id-10012 .fusion-builder-row-3 {
+           height: 85vh !important;
+        }
+    #mute-toggles {
+        bottom:60px !important;
+    }
+   
+    .page-id-4143 .post-content p {
+        min-height: 60px;
+    }
+    .page-id-10012 .fusion-builder-row-7 .fusion-builder-row{
+    width: 53%;
+}
+.krafted-absoult {
+    position: absolute;
+    right: -19%;
+    top: -20%;
+}
+.krafted-absoult img{
+    width: 70%;
+}
+.slider-arrow {
+    top: 28%;
+}
+}
+
+@media (min-width: 1400px) and (max-width: 1590px) {
+    #mute-toggle {
+    bottom:50px !important;
+}
+
+     #mute-toggles {
+        bottom:20px !important;
+    }
+.krafted-absoult {
+    position: absolute;
+    right: -18%;
+    top: -20%;
+}
+.krafted-absoult img{
+    width: 70%;
+}
+.slider-arrow {
+    top: 29%;
+}
+}
+@media (min-width: 1600px) and (max-width: 1700px) {
+        #menu-main-menu li a .menu-text {
+            font-size: 14px !important;
+        }
+.krafted-absoult {
+    position: absolute;
+    right: -18%;
+    top: -20%;
+}
+.krafted-absoult img{
+    width: 70%;
+}
+.page-id-4143 .post-content p {
+    min-height: 50px;
+}
+
+
+.page-id-4143 .fusion-title.fusion-sep-none .title-heading-left {
+   min-height: 50px;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+.page-id-10012 h2{
+    font-size: 42px !important;
+}
+.page-id-10012 p{
+    font-size: 16px !important;
+}
+.page-id-10012  .fusion-builder-row-7 .awb-background-slider img  {
+    height: auto !important;
+}
+.sub-text-tit p{
+      font-size:20px !important;
+  }
+}
+
+
+@media (min-width:768px) and (max-width: 1100px) {
+    #mute-toggle {
+    bottom:0 !important;
+}
+.page-id-10012 h2{
+    font-size: 38px !important;
+}
+.page-id-10012 p{
+    font-size: 16px !important;
+}
+.krafted-absoult img{
+    width: 90px;
+}
+ .page-id-10012 .fusion-builder-row-7 {
+        background-image: url('https://kknag.com/wp-content/uploads/2025/07/kitchen-kettle-mb.png'); /* path to your image */
+        background-size: cover;       /* scales image to cover the element */
+        background-position: center;  /* centers the image */
+        background-repeat: no-repeat; /* prevents image from repeating */
+    }
+     .page-id-10012 .fusion-builder-row-7 .awb-background-slider img {
+        display: none;
+    }
+    
+
+   .page-id-10012 .slider-arrow {
+       top: 20%;
+        
+    }
+    
+     .page-id-10012 .fusion-builder-row-8 .awb-background-slider img {
+    display: none;
+  }
+ .page-id-10012  .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-11{
+        order: 2;
+     }
+     .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-column-wrapper{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+     }
+      .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-8, .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-9{
+       margin: 0 !important;
+     }
+     
+      .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-8 p, .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-9 p{
+        text-align: center;
+     }
+      .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-7 h2{
+            text-align: center;
+     }
+       .page-id-10012 .fusion-builder-row-8 .fusion-builder-row {
+        flex-direction: column;
+     }
+     
+}
+
+@media (max-width: 768px) {
+    #mute-toggle {
+    bottom: 20px !important;
+    right: 15px !important;
+     width: 51px !important;
+    height: 40px !important;
+}
+    #mute-toggles {
+        bottom: 20px !important;
+        right: 15px !important;
+         width: 51px !important;
+        height: 40px !important;
+    }
+        
+       
+
+    
+    .page-id-10012 .post-content .fusion-builder-row-3 {
+  
+}
+    
+    .kitn{
+    margin-top: -220px;
+}
+    .slider-container{
+    margin-top: -10px;
+}
+.my-slick-slider .slick-dots {
+    bottom: -33px;
+}
+   .page-id-10012 .fusion-builder-column-12 .fusion-column-wrapper .fusion-title h2{
+    text-align: center !important;
+}
+ .page-id-10012 .fusion-builder-column-12 .fusion-column-wrapper .fusion-title p{
+     text-align: center !important;
+ }
+     .Legacy-built-p-title .fusion-column-wrapper .fusion-title .fusion-title-heading{
+            text-align: center;
+            padding-bottom: 10px !important;
+            font-size: 32px !important;
+        }
+         .Legacy-built-p-disc p:first-of-type {
+            margin-bottom: 0 !important;
+            }
+    .cole-f{
+        font-size:20px !important;
+    }
+    .Legacy-built-p h2{
+            text-align: center;
+        }
+    
+        .Legacy-built-p{
+            text-align: center;
+        }
+        .Legacy-built-p .fusion-builder-row .fusion-layout-column .fusion-title-heading h2{
+            text-align: center;
+        }
+    
+ .page-id-10012 .post-content .fusion-builder-row-3{
+   height: 26vh !important;
+    }
+/*    .page-id-10012 .video-background .fullwidth-video video {*/
+/*    max-width:36px;*/
+    
+/*}*/
+
+   .page-id-10012 .video-background .fullwidth-video video {
+    max-width:36px;
+            position: relative;
+        top: 0 !important;
+    }
+     .page-id-10012 .fusion-fullwidth .fullwidth-video video{
+    left: unset;
+    transform: unset;
+    }
+
+      .page-id-10012 h2{
+    font-size: 24px !important;
+    }
+     .page-id-10012 h2{
+         font-family: "Gilroy-Bold" !important;
+     }
+    .page-id-10012 p{
+        font-size: 14px !important;
+        font-family: 'Gilroy-Medium' !important;
+    }
+     .page-id-10012 .fusion-builder-row-7 {
+        background-image: url('https://kknag.com/wp-content/uploads/2025/07/kitchen-kettle-3.png'); /* path to your image */
+  background-size: cover;       /* scales image to cover the element */
+  background-position: bottom;  /* centers the image */
+  background-repeat: no-repeat; /* prevents image from repeating */
+  height: 790px;
+    }
+     .page-id-10012 .fusion-builder-row-7 .awb-background-slider img {
+        display: none;
+    }
+    .page-id-10012 .fusion-builder-row-8 .awb-background-slider img {
+    display: none;
+  }
+ .page-id-10012  .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-11{
+        order: 2;
+     }
+     .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-column-wrapper{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+     }
+      .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-8, .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-9{
+       margin: 0 !important;
+     }
+     
+      .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-8 p, .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-9 p{
+        text-align: center;
+     }
+      .page-id-10012 .fusion-builder-row-8 .fusion-builder-row .fusion-builder-column-12 .fusion-content-layout-column .fusion-title-7 h2{
+            text-align: center;
+     }
+     
+     .page-id-10012 .fusion-builder-row-9 {
+            background-image: url('https://kknag.com/wp-content/uploads/2025/07/twitter.png'); /* path to your image */
+         background-size: cover;       /* scales image to cover the element */
+            background-position: center;  /* centers the image */
+            background-repeat: no-repeat;
+    }
+            
+
+        .page-id-10012 .fusion-builder-row-10 {
+            background-image: url('https://kknag.com/wp-content/uploads/2025/07/patent-mb.png'); /* path to your image */
+            background-size: cover;       /* scales image to cover the element */
+            background-position: center;  /* centers the image */
+            background-repeat: no-repeat; /* prevents image from repeating */
+            }
+       .page-id-10012 .fusion-builder-row-9 .awb-background-slider img,  .page-id-10012 .fusion-builder-row-10 .awb-background-slider img  {
+            display: none;
+        }
+        .page-id-10012 .fusion-builder-row-10  .fusion-builder-row .fusion-builder-column-18 .fusion-column-wrapper{
+                padding-left: 0;
+            }
+            .krafted-absoult {
+                position: absolute;
+                bottom: -16%;
+                right: 10%;
+                top:unset;
+            }
+            .krafted-absoult img{
+                width: 60px;
+            }
+            .page-id-10012 .fusion-builder-row-10 .fusion-builder-column-18 h2{
+                text-align: center !important;
+            }
+             .page-id-10012 .fusion-builder-row-10 .fusion-builder-column-18 p{
+                text-align: center !important;
+            }
+              .page-id-10012 .fusion-builder-row-10 .fusion-builder-column-18 .fusion-title-17, .page-id-10012 .fusion-builder-row-10 .fusion-builder-column-18 .fusion-title-16{
+                margin: 0 !important;
+            }
+}
+            
+          @media (min-width:370px) and  (max-width: 380px){
+                  .page-id-10012 .post-content .fusion-builder-row-3 {
+                    /*height: 30vh !important;*/
+                    height: 350px !important;
+                }
+            }
+            
+           @media  (min-width:420px) and   (max-width: 430px) {
+                  .page-id-10012 .post-content .fusion-builder-row-3 {
+                    /*height: 26vh !important;*/
+                    height: 350px !important;
+                    
+                }
+            }
+              @media (min-width:385px) and  (max-width: 395px){
+                  .page-id-10012 .post-content .fusion-builder-row-3 {
+                    /*height: 29vh !important;*/
+                    height: 350px !important;
+                }
+            }
+            
+              @media (min-width:410px) and  (max-width: 415px){
+                  .page-id-10012 .post-content .fusion-builder-row-3 {
+                    /*height: 29vh !important;*/
+                    height: 350px !important;
+                }
+            }
+                @media  (min-width:435px) and   (max-width: 440px) {
+                         .page-id-10012 .post-content .fusion-builder-row-3 {
+                    /*height: 29vh !important;*/
+                    height: 350px !important;
+                }
+                }
+            
+    /*Video mute icon added */
+    
+    
+.thermacole-banner {
+  position: relative !important;
+}
+
+#mute-toggles {
+  position: absolute;
+  z-index:10;
+  bottom: 0px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#mute-toggles:hover {
+  background:transparent;
+  transform: scale(1.1);
+}
+
+#mute-toggles img {
+  width: 100px;
+  height: 100px;
+}
+
+/*home mute css */
+
+.home-banner {
+  position: relative !important;
+}
+
+#mute-toggle {
+  position: absolute;
+  bottom: 65px;
+  right: 30px;
+  z-index:10;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#mute-toggle:hover {
+  background:transparent;
+  transform: scale(1.1);
+}
+
+#mute-toggle img {
+  width: 50px;
+  height: 50px;
+}
+
+/*end home mute icons */
+
+.fusion-fullwidth.video-background {
+  position: relative !important;
+}
+.privacy-titl{
+    font-size:42px !important;
+}
+
+
+/* For mobile devices (<= 650px) */
+@media (max-width: 650px) {
+    .privacy-titl{
+    font-size:32px !important;
+}
+    .thermacole-banner .fullwidth-video video {
+        display: none !important;
+    }
+    .thermacole-banner .fullwidth-video {
+        position: relative;
+    }
+    .thermacole-banner .fullwidth-video::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://kknag.com/wp-content/uploads/2025/08/360-x330-KK-Nag-thermacol-history-1.mp4') no-repeat center center;
+        background-size: cover;
+        z-index: 1;
+    }
+}
+
+/* Ensure desktop video shows on larger screens */
+@media (min-width: 651px) {
+    .thermacole-banner .fullwidth-video video {
+        display: block !important;
+    }
+    .thermacole-banner .fullwidth-video::after {
+        display: none !important;
+    }
+}
+
+
+
+/*cta color */
+
+
+
+.page-id-11 #main{
+    padding-top:0 !important;
+}
+/*video */
